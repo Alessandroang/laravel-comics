@@ -22,3 +22,10 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+
+
+Route::get('/comics', function () {
+   $comics = config('comics.comic');
+    return view('comics', compact('comics'));
+})->name('comics');

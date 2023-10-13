@@ -1,1 +1,42 @@
 @import "~bootstrap/scss/bootstrap";
+
+.header-content {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .list {
+        display: flex;
+        list-style-type: none;
+
+        li {
+            padding: 0px 10px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.jumbotron {
+    height: 300px;
+}
+
+.load-but {
+    text-align: center;
+    width: 100%;
+    button {
+        background-color: hsl(209deg 100% 49%);
+        color: white;
+        padding: 10px 40px;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+}
